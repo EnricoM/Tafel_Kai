@@ -1,0 +1,15 @@
+<!--
+  This template loads for the 'tab.about' state (app.js)
+-->
+<ion-view title="De tafel van Kai - leren" ng-controller="TableLearnCtrl">
+	<ion-content padding="true">
+	
+		<p><b>De tafel van {{ practice }}</b></p>
+		<ul class="list">
+			<li class="item" ng-repeat="table in tables">
+				{{ table  }} X {{ practice }} = {{ table * practice }}
+			</li>
+		</ul>
+
+	</ion-content>
+</ion-view>

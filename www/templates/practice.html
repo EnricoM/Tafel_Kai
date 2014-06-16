@@ -1,0 +1,79 @@
+<!--
+  This template loads for the 'tab.about' state (app.js)
+-->
+<ion-view title="De tafel van Kai - oefenen" ng-controller="TablePracticeCtrl">
+	<ion-content padding="true">
+		<div>
+			<label class="item item-input">
+				<span class="input-label">Wat is {{ current  }} X {{ practice }}</span>
+				<input type="number" ng-model="answer" readonly>
+			</label>		
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(1)">1</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(2)">2</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(3)">3</button>
+				</div>
+				<div class="col"></div>
+			</div>  
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(4)">4</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(5)">5</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(6)">6</button>
+				</div>
+				<div class="col"></div>
+			</div>  
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(7)">7</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(8)">8</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(9)">9</button>
+				</div>
+				<div class="col"></div>
+			</div>  
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tableAnswer(0)">0</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-assertive icon ion-close-circled" ng-click="eraseAnswer()"></button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-balanced icon ion-checkmark-circled" ng-click="checkAnswer()"></button>
+				</div>
+				<div class="col"></div>
+			</div>				
+				
+		</div> <!-- end table select container -->
+
+		<div class="container"> <!-- end table select container -->
+			<p><b>De tafel van {{ practice }}</b></p>
+			<ul class="list">
+				<li class="item" ng-repeat="current in myAnswers">
+					{{ current  }} X {{ practice }} = {{ answers[current-1] }}
+				</li>
+			</ul>
+		</div>  
+	</ion-content>
+</ion-view>

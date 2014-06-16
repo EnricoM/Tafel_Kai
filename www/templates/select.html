@@ -1,0 +1,80 @@
+<!--
+  This template loads for the 'tab.about' state (app.js)
+-->
+<ion-view title="De tafel van Kai - selecteren" ng-controller="TableSelectCtrl">
+	<ion-content padding="true">
+		<div>
+			<label class="item item-input">
+				<span class="input-label">Tafel</span>
+				<input type="number" ng-model="practice" readonly>
+			</label>	
+		
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(1)">1</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(2)">2</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(3)">3</button>
+				</div>
+				<div class="col"></div>
+			</div>  
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(4)">4</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(5)">5</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(6)">6</button>
+				</div>
+				<div class="col"></div>
+			</div>  
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(7)">7</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(8)">8</button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(9)">9</button>
+				</div>
+				<div class="col"></div>
+			</div>  
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-stable" ng-click="tablePractice(0)">0</button>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>  
+			<p>
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<button class="button button-large button-assertive icon ion-close-circled" ng-click="eraseInput()"></button>
+				</div>
+				<div class="col">
+					<button class="button button-large button-balanced icon ion-checkmark-circled" ng-click="startPractice()"></button>
+				</div>
+				<div class="col">
+					<button class="button button-large icon ion-help" ng-click="startLearning()"></button>
+				</div>
+				<div class="col"></div>
+			</div>  
+			</p>
+		</div>
+	</ion-content>
+</ion-view>
